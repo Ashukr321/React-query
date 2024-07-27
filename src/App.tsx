@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Loader from "./compoentns/loader/Loader";
 import Product from "./pages/product/Product1";
 import Product1 from "./pages/product/Product1";
+import ProductDetails from "./pages/product/ProductDetails";
 const App = () => {
   const [loading, setLoading] = useState(true);
 
@@ -25,6 +26,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/product1" element={<Product1 />} />
+        <Route path="/product1/:productId" element={<ProductDetails />} />
       </Routes>
     </div>
   );
